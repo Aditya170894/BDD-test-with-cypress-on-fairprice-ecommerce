@@ -16,3 +16,7 @@ And(/^I choose promotions with (\w+) tag$/, () => {
 Then(/^I validation product with lable PWP$/, () => {
     promotions.pwp_lable()
 })
+
+Then(/^I validation product with non lable PWP$/, () => {
+    promotions.offer_lable()
+})
