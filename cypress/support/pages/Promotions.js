@@ -32,11 +32,19 @@ class Promotions {
                 for (let i = 0; i < $list.length; i++) {
                     expect($list.eq(i).text()).to.eq('PWP');
                 }
-
             }
         );
     }
 
+    async offer_lable(){
+        return cy.get('.sc-1plwklf-19 > span').should(
+            $list => {
+                for (let i = 0; i < $list.length; i++) {
+                    expect($list.eq(i).text()).to.eq('Offer');
+                }
+            }
+        );
+    }
 }
 
 module.exports = Promotions;
